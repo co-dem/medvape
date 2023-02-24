@@ -1,8 +1,8 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-TOKEN = '5999439436:AAGcSDlI3gfEFkdk1HC9dfYwkW3CHLzvj7Y'
-MANAGER_ID = 798330024
+TOKEN = 'token'
+MANAGER_ID = id
 
 METRO_STATIONS = {'каменная горка': 'каменной горке', 'кунцевщина': 'кунцевщине', 'спортивная': 'спортивной', 'пушкинская': 'пушкинской', 'молодежная': 'молодежной',
                   'фрунзенская': 'фрунзенской', 'немига': 'немига', 'купаловская': 'купаловской', 'первомайская': 'первомайской', 'пролетарская': 'пролетарской', 
