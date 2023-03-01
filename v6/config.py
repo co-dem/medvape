@@ -1,12 +1,12 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-TOKEN = '5999439436:AAGcSDlI3gfEFkdk1HC9dfYwkW3CHLzvj7Y'
-api_hash = '1880a5937bc325022275fed4063a5076'
-api_id = 17881969
+TOKEN = 'token'
+api_hash = 'api_hash'
+api_id = 12345678
 
-MANAGER_ID = 798330024
-DEVELOPERID = 798330024
+MANAGER_ID = 123456789
+DEVELOPERID = 123456789
 
 
 METRO_STATIONS = {'каменная горка': 'каменной горке', 'кунцевщина': 'кунцевщине', 'спортивная': 'спортивной', 'пушкинская': 'пушкинской', 'молодежная': 'молодежной',
