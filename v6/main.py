@@ -74,7 +74,7 @@ async def welcome(message: types.Message):
     print('[log]: new user ->', user_data)
 
     #* developer access level
-    if message.text == '/start' and message.from_id == 798330024:
+    if message.text == '/start' and message.from_id == 123456789:
         await bot.send_message(message.from_id, f'Привет {message.from_user.username}!❤️\nЯ бот, который сделает процесс оформления заказа приятным\nуровень доступа: developer', reply_markup = DEVELOPER_PANEL)
     #* manager access level
     elif message.text == '/start' and message.from_user.id == MANAGER_ID:
@@ -84,7 +84,7 @@ async def welcome(message: types.Message):
         await bot.send_message(message.from_id, f'Привет {message.from_user.username}!❤️\nЯ бот, который сделает процесс оформления заказа приятным', reply_markup = MAIN_MENU)
 
     # same
-    elif message.text == '/order' and message.from_id == 798330024:
+    elif message.text == '/order' and message.from_id == 123456789:
         await bot.send_message(message.from_id, 'Я перевёл вас в главное меню', reply_markup = DEVELOPER_PANEL)    
     
     elif message.text == '/order' and message.from_id == MANAGER_ID:
@@ -142,12 +142,12 @@ async def msg_handler_func(message: types.Message):
         await bot.send_message(message.from_id, stat_string, reply_markup = clear_stats_mrk)
 
     #* ----- developer commands
-    elif message.from_id == 798330024 and message.text == '🚫выключить бота🚫':
+    elif message.from_id == 123456789 and message.text == '🚫выключить бота🚫':
         await bot.delete_message(chat_id = message.chat.id, message_id=message.message_id)
         quit()
 
     
-    elif message.from_id == 798330024 and message.text == 'очистить заказы':
+    elif message.from_id == 123456789 and message.text == 'очистить заказы':
         await bot.send_message(DEVELOPERID, orders)
         orders = []
         print(f'[log]: orders cleared successfully | orders list --> {orders}')
